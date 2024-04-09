@@ -81,7 +81,7 @@ public class Main {
             return;
         }
         for (int i = 0; i < factory[belt_id].size(); i++) {
-            if(factory[belt_id].get(i).id==f_id) break;
+            if(factory[belt_id].get(0).id==f_id) break;
             Box box = factory[belt_id].pollFirst();
             factory[belt_id].addLast(box);
         }
